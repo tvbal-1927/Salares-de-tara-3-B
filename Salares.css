@@ -1,0 +1,185 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/Salar_de_Tara.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+nav {
+    background-color: #004d40;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.intro h2 {
+    color: #00695c;
+    margin-bottom: 20px;
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-section img {
+    width: 45%;
+    border-radius: 15px;
+}
+
+.text {
+    width: 55%;
+}
+
+.text h2 {
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.cards-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00695c;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #00897b;
+    margin-bottom: 15px;
+}
+
+.tourism {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.tourism h2 {
+    color: #00695c;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+@media (max-width: 768px) {
+
+    .content-section,
+    .reverse {
+        flex-direction: column;
+    }
+
+    .content-section img,
+    .text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
